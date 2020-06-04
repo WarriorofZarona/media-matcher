@@ -101,7 +101,7 @@ function Nav(props) {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon justify-content-start"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         {/* <form class="form-inline md-form mb-4 mx-auto">

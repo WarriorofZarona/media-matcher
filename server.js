@@ -19,7 +19,6 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //Import message server
-require("./config/messageServer")(app);
 
 //including API routes here, passes server and db through to routes
 require("./routes/apiRoutes")(app, db);
@@ -35,7 +34,8 @@ app.get("*", (req, res) => {
 
 db.sequelize.sync().then(function () {
   //syncs our models to database, remove 'force: true' in production so we dont destroy our data
-  app.listen(PORT, function () {
+  let chatServer = app.listen(PORT, function () {
+    require("./config/messageServer")(chatServer);
     console.log("🚀  API server now on port", PORT);
   });
 });

@@ -87,9 +87,11 @@ const Login = (props) => {
                             {/*  style={{ fontFamily: "Uni Sans Caps" }} */}
                             {/* </MDBRow> */}
                             <MDBRow className="d-flex justify-content-center mt-5">
-                                <h3 style={{ fontFamily: "Uni Sans" }}> A place where Gamers meet! </h3>
-                                {/* removed h3 font */}
-                                {/*  style={{ fontFamily: "Uni Sans Caps" }} */}
+                                <MDBCol lg="12">
+                                    <h3 className="mx-2 text-center"> A place where Gamers meet! </h3>
+                                    {/* removed h3 font */}
+                                    {/*  style={{ fontFamily: "Uni Sans Caps" }} */}
+                                </MDBCol>
                             </MDBRow>
                         </div>
                         <MDBCardBody className="mx-4 mt-4">
@@ -107,7 +109,7 @@ const Login = (props) => {
 
                             />
                             <MDBRow className="d-flex align-items-center mb-4 mt-5">
-                                <MDBCol md="5" className="d-flex align-items-start">
+                                <MDBCol md="4" className="d-flex align-items-start p-1 justify-content-center">
                                     <div className="text-center">
                                         <MDBBtn
                                             rounded
@@ -120,7 +122,7 @@ const Login = (props) => {
                                     </div>
 
                                 </MDBCol>
-                                <MDBCol md="7" className="d-flex justify-content-end p-1">
+                                <MDBCol md="8" className="d-flex justify-content-end p-1">
                                     <div className="text-center">
 
                                         {/* Removed the following code from this a tag */}

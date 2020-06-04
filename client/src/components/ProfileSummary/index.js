@@ -9,7 +9,7 @@ function ProfileSummary(props) {
 
     useEffect(() => {
         getGameImages();
-    },[])
+    }, [])
 
     const getGameImages = () => {
         API.getGames().then(res => {
@@ -34,7 +34,7 @@ function ProfileSummary(props) {
                             {props.favPlatformsImgs.map((favPlatformImg, i) => (
                                 <div key={favPlatformImg.title}>
                                     <div className="myPlatforms mt-3">
-                                        <h3>{favPlatformImg.title}</h3>
+                                        <h5>{favPlatformImg.title}</h5>
                                     </div>
                                 </div>
                             ))}

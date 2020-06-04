@@ -1,14 +1,12 @@
 body {
-  /* background-color: rgb(39, 39, 39);
-  color: rgb(216, 215, 215); */
+
   background-image: linear-gradient(to bottom, white, #a8a8a8);
   background-repeat: no-repeat;
   /* padding-top: 200px;  */
   background-size: cover;
   min-height: 100%;
-  /* font-family: 'Red Hat Text', sans-serif; */
-  /* font-family: 'Spinnaker', sans-serif; */
-  font-family: 'Telex', sans-serif;
+
+  font-family: 'Work Sans', sans-serif;
 }
 
 html {
@@ -48,10 +46,6 @@ html {
 
 .platformChoice {
   display: inline-block
-}
-
-.platformOptions {
-  /* display: inline-block */
 }
 
 .onboarding {

@@ -6,7 +6,7 @@ require("dotenv").config();
 
 const ChatContext = createContext();
 const { Provider } = ChatContext;
-const URL = (process.env.APP_URL + 6006) || "http://localhost:3002"
+const URL = "https://ancient-dusk-51587.herokuapp.com/"
 
 let socket;
 
@@ -64,7 +64,7 @@ function createChat(creatorId, joineeId) {
 
 function loadSocket(state, dispatch) { //connects to socket on server whoo!
 
-    socket = io(URL);
+    socket = io.connect(URL);
 
     socket.emit("user_connect", state.user.id);
 

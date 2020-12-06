@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.css";
 
-
 //import all carousel images
 import Image1 from "../../assets/images/animalcrossing.jpg"
 import Image2 from "../../assets/images/halo.jpg"
@@ -24,26 +23,20 @@ class CarouselTwo extends React.Component {
 
     toggle = e => {
         setInterval(() => {
-            console.log("current index", this.state.index)
             this.setState(state => ({
                 index: state.index === 8 ? 0 : state.index + 1
-            }))
-        }, 5000)
+            }));
+        }, 4000)
     }
 
     componentDidMount() {
         this.toggle();
     }
 
-
     render(){
         return (
-            <div className="main-caro-two">
-
-                <img className="caro-two-img" src={caroImgs[this.state.index]}></img>
-
-
-
+            <div className="main-caro-two caro-border">
+                <img id="caroImgTwo" className="caro-two-img " src={caroImgs[this.state.index]}></img>
             </div>
         );
     }

@@ -71,7 +71,7 @@ const Login = (props) => {
     }
 
     return (
-        <MDBContainer>
+        <MDBContainer style={{ marginTop: "40px"}}>
             <MDBRow>
                 <MDBCol lg="6">
                     { /*<Carousel />*/ }

@@ -1,9 +1,10 @@
 import React, { useState, } from "react";
 import Logo from "../assets/images/mainLogo.jpeg"
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBBtn, MDBInput, MDBModal, MDBModalBody, MDBModalFooter, MDBModalHeader } from 'mdbreact';
-import Carousel from "../components/Carousel"
+import Carousel from "../components/Carousel";
 import { BrowserRouter as Router, Redirect } from "react-router-dom";
 import Auth from "../utils/Auth";
+import CarouselTwo from "../components/CarouselTwo";
 // import UserContext from "../utils/UserContext";
 
 
@@ -73,7 +74,8 @@ const Login = (props) => {
         <MDBContainer>
             <MDBRow>
                 <MDBCol lg="6">
-                    <Carousel />
+                    { /*<Carousel />*/ }
+                    <CarouselTwo />
                 </MDBCol>
                 <MDBCol lg="6" style={{ paddingLeft: "50px" }}>
                     <MDBCard>
